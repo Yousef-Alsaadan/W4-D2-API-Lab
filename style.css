@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0f0f0f;
+}
+
+.form_link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: white;
+    margin-top: 1rem;
+}
+
+.form_link input {
+    border: none;
+    border-radius: 10px;
+    padding-left: .5rem;
+    height: 2rem;
+    width: 25rem;
+}
+
+.form_link button {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    padding: .5rem 5rem;
+    font-weight: bold;
+}
+
+.imageAPI {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card img {
+    height: 480;
+    width: 480;
+    border-radius: 15px;
+    object-fit: cover;
+
+}
+
+.title {
+    display: flex;
+    color: white;
+    gap: 3rem;
+}
+
+.title button {
+    background-color: rgb(178, 4, 4);
+    border: none;
+    border-radius: 10px;
+    padding: .5rem 5rem;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+@media only screen and (max-width: 992px) {
+    .imageAPI {
+        grid-template-columns: auto;
+    }
+
+    .form_link input {
+        border: none;
+        border-radius: 10px;
+        padding-left: .5rem;
+        height: 2rem;
+        width: 20rem;
+    }
+
+    .card img {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+    .imageAPI {
+        grid-template-columns: auto auto;
+    }
+
+    .card img {
+        max-width: 100%;
+    }
+}
