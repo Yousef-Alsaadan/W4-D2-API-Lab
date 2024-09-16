@@ -15,7 +15,11 @@ btn.addEventListener("click", () => {
     headers: {
       "content-type": "application/json; charset=utf-8",
     },
-  });
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      location.reload();
+    });
 });
 
 fetch(url)
